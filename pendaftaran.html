@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Calon Mahasiswa</title>
+  </head>
+  <style>
+    th {
+      font-size: 0.9em;
+      font-family: Verdana;
+      text-align: left;
+    }
+  </style>
+  <body>
+    <h1 style="font-family: Verdana">Pendaftaran Mahasiswa Baru</h1>
+    <form action="" method="post">
+      <fieldset style="float: left">
+        <legend style="font-family: Verdana">Biodata Calon Mahasiswa</legend>
+        <table>
+          <tr>
+            <th>No. Daftar</th>
+            <td>:</td>
+            <td><input type="text" name="nodaftar" size="40" /></td>
+          </tr>
+          <tr>
+            <th>Nama</th>
+            <td>:</td>
+            <td><input type="text" name="nama" size="40" /></td>
+          </tr>
+          <tr>
+            <th>Alamat</th>
+            <td>:</td>
+            <td><textarea name="alamat" cols="30" rows="10"></textarea></td>
+          </tr>
+          <tr>
+            <th>Tgl Lahir</th>
+            <td>:</td>
+            <td><input type="date" name="tgllahir" size="40" style="padding: 4px;" /></td>
+          </tr>
+        <tr>
+            <th>Tinggi Badan</th>
+            <td>:</td>
+            <td><input type="number" name="tb" size="40" /></td>
+          </tr>
+        </table>
+      
+      </fieldset>
+      <fieldset style="float: left;  margin-left: 50px;">
+        <legend style="font-family: Verdana;">Pendaftaran</legend>
+        <table>
+            <tr>
+                <th>
+                    Penerimaan
+                </th>
+                <td>:</td>
+                <td>
+                    <select name="Gelombang" style="padding:  5px;">
+                        <option value="01">Gelombang I</option>
+                        <option value="02">Gelombang II</option>
+                        <option value="03">Gelombang III</option>
+                        <option value="04">Gelombang IV</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>No. Daftar</th>
+                <td>:</td>
+                <td>
+                    <select name="programstudi" style="padding: 5px;">
+                        <option value="-1">Silahkan pilih satu</option>
+                        <optgroup label="Falkutas Ilmu Komputer">
+                            <option value="SI">Sistem Informasi</option>
+                            <option value="IF">Informatika</option>I</option>
+                        </optgroup>
+                        <optgroup label="Falkutas Ilmu Ekonomi">
+                            <option value="MN">Manajemen</option>
+                            <option value="AK">Akuntansi</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="checkbox">Setuju Pendaftaran</td>
+                <tr/>
+                <td><input type="submit" style="margin-right: 5px;"> <input type="reset"></td>
+            </tr>
+
+        </table>
+    </fieldset>
+
+      </form>
+  </body>
+</html>
